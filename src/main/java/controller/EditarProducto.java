@@ -9,7 +9,8 @@ import entities.Producto;
 import service.ServicioProducto;
 
 @Controller
-@Scope("session")
+@Scope("session") // crear una instancia diferente en cada sesion http, cada usuario tendra su
+                  // propio managed-bean.
 public class EditarProducto {
 
     @Resource
